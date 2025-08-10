@@ -21,7 +21,7 @@ const Header = () => {
               href="#home"
               className="text-foreground hover:text-primary transition-colors"
             >
-              About
+              Home
             </a>
             {/* <a
               href="#features"

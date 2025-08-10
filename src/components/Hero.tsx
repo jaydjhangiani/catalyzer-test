@@ -3,6 +3,7 @@ import { Input } from '@/components/ui/input';
 import { Search, Sparkles } from 'lucide-react';
 import heroImage from '@/assets/hero-bg.jpg';
 import { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
   // typing
@@ -101,13 +102,15 @@ const Hero = () => {
                   placeholder="What you would like to create"
                   className="flex-grow bg-transparent text-black placeholder:text-gray-500 focus:outline-none focus:ring-0 focus:border-none text-base px-4"
                 />
-                <Button
-                  variant="lime"
-                  size="icon"
-                  className="rounded-full w-12 h-12 md:w-16 md:h-12 min-w-8 min-h-8"
-                >
-                  <Search className="w-4 h-4" />
-                </Button>
+                <NavLink to="/chatbot">
+                  <Button
+                    variant="lime"
+                    size="icon"
+                    className="rounded-full w-12 h-12 md:w-16 md:h-12 min-w-8 min-h-8"
+                  >
+                    <Search className="w-4 h-4" />
+                  </Button>
+                </NavLink>
               </div>
             </div>
             <button
